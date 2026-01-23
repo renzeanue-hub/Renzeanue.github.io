@@ -139,25 +139,7 @@
     }
     timer = setInterval(autoSlide, 3500);
 
-    // ===== ギャラリーカテゴリ切り替え =====
-    const galleryTabs = document.querySelectorAll('.gallery-tab');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    galleryTabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        document.querySelector('.gallery-tab.active').classList.remove('active');
-        tab.classList.add('active');
-        const cat = tab.getAttribute('data-category');
-        galleryItems.forEach(item => {
-          if (cat === 'all' || item.getAttribute('data-category') === cat) {
-            item.removeAttribute('hidden');
-          } else {
-            item.setAttribute('hidden', '');
-          }
-        });
-      });
-    });
-    // ギャラリーの情報
-    const container = document.querySelector('.gallery-container');
+    // ギャラリー生成
     galleryData.forEach(item => {
       container.insertAdjacentHTML('beforeend', `
         <div class="gallery-item" data-category="${item.category}" data-image-id="${item.id}">
@@ -170,6 +152,28 @@
         </div>
       `);
     });
+
+    // ===== ギャラリーカテゴリ切り替え =====
+    const galleryTabs = document.querySelectorAll('.gallery-tab');
+
+    galleryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelector('.gallery-tab.active').classList.remove('active');
+        tab.classList.add('active');
+
+        const cat = tab.getAttribute('data-category');
+        const galleryItems = document.querySelectorAll('.gallery-item'); // ←ここで取得
+
+        galleryItems.forEach(item => {
+          if (cat === 'all' || item.dataset.category === cat) {
+            item.hidden = false;
+          } else {
+            item.hidden = true;
+          }
+        });
+      });
+    });
+
 
   //====Garallery more button====
     document.querySelectorAll('.gallery-more').forEach(btn => {
