@@ -83,7 +83,7 @@
   },
   {
     id: "Ash_resurrection",
-    thumbnail: "images/thumbnail/MK3.jpg",
+    thumbnail: "images/thumbnail/MK3_thumbnail.jpg",
     src: "images/MK3.jpg",
     title: "Ash Resurrection",
     category: "original",
