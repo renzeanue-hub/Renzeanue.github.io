@@ -505,6 +505,30 @@ footer {
   transform: scale(1.12) rotate(-8deg);
 }
 
+/* commission_detail.html */
+
+#order {
+  background: #232323;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 32px #0007;
+  margin-top: 60px;
+}
+
+#order a {
+  color: #bbb;
+  text-decoration: underline;
+  transition: color 0.2s, background 0.2s;
+}
+
+#order a:hover {
+  color: #fff;
+  background: #4448;
+  padding: 2px 5px;
+  border-radius: 7px;
+}
+
+
 /* =====================
    スマホ用
 ===================== */
