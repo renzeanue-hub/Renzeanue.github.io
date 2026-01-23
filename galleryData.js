@@ -81,4 +81,13 @@
     description: "VALIS Fanart 2025/9",
     detail_description: "夏VALIS"
   },
+  {
+    id: "Ash_resurrection",
+    thumbnail: "images/thumbnail/MK3.jpg",
+    src: "images/MK3.jpg",
+    title: "Ash Resurrection",
+    category: "original",
+    description: "Original character 2026/1",
+    detail_description: "サイドチェスターMK3"
+  }
 ];
