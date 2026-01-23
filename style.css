@@ -345,9 +345,7 @@ h2 {
   margin-left: 10px;
   margin-top: 6px;
   box-shadow: 0 2px 8px #ec407a44;
-  transition: 
-    background 0.22s, color 0.22s, 
-    transform 0.18s, box-shadow 0.18s;
+  transition: background 0.22s, color 0.22s, transform 0.18s, box-shadow 0.18s;
   outline: none;
   vertical-align: middle;
 }
