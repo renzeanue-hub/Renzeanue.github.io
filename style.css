@@ -560,7 +560,7 @@ footer {
   }
 
   .gallery-container {
-    gap: clamp(10px, 3vw, 15px);
+    gap: clamp(5px, 2vw, 15px);
   }
 
   #about p, #contact p {
