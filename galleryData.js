@@ -73,15 +73,6 @@
     detail_description: ""
   },
   {
-    id: "valis_summer",
-    thumbnail: "images/thumbnail/VALIS_Summer_thumbnail.jpg",
-    src: "images/VALIS_Summer.jpg",
-    title: "Hot Girls Summer!!",
-    category: "fanart",
-    description: "VALIS Fanart 2025/9",
-    detail_description: "夏VALIS"
-  },
-  {
     id: "Ash_resurrection",
     thumbnail: "images/thumbnail/MK3_thumbnail.jpg",
     src: "images/MK3.jpg",
@@ -98,5 +89,14 @@
     category: "fanart",
     description: "VALIS Fanart 2026/1",
     detail_description: "VALIS 7th ONE-MAN LIVE「彷徨フォーエバー」のファンアートです。"
+  },
+  {
+    id: "valis_summer",
+    thumbnail: "images/thumbnail/VALIS_Summer_thumbnail.jpg",
+    src: "images/VALIS_Summer.jpg",
+    title: "Hot Girls Summer!!",
+    category: "fanart",
+    description: "VALIS Fanart 2025/9",
+    detail_description: "夏VALIS"
   }
 ];
