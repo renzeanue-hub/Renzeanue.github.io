@@ -88,6 +88,15 @@
     title: "Ash Resurrection",
     category: "original",
     description: "Original character 2026/1",
-    detail_description: "サイドチェスターMK3"
+    detail_description: "オリジナルキャラクター、サイドチェスターMK3のイラストです"
+  },  
+  {
+    id: "houkouforever",
+    thumbnail: "images/thumbnail/houkouforever_thumbnail.jpg",
+    src: "images/houkouforever.jpg",
+    title: "Continue to Wander",
+    category: "fanart",
+    description: "VALIS Fanart 2026/1",
+    detail_description: "VALIS 7th ONE-MAN LIVE「彷徨フォーエバー」のファンアートです。"
   }
 ];
