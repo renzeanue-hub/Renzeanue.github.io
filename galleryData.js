@@ -5,6 +5,7 @@
     src: "images/CHINO_Memoria.jpg",
     title: "Memoria",
     category: "fanart",
+    pickup: true,
     description: "CHINO(VALIS) Fanart 2025/7",
     detail_description: "VALISのメンバー、CHINOのオリジナルソロ曲「Memoria」のファンアートです。\n時間とともに薄れゆく思い出。それに抗うように、補い、反芻しながら、人は過去を留めようとするのかもしれない。\nけれど、そんな独りよがりで描き出した記憶は結局、贋物にすぎないのだろうか。\nそれでも私は忘れたくない。"
   },
@@ -14,6 +15,7 @@
     src: "images/Neffy_EyesOnMe.jpg",
     title: "Eyes On Me",
     category: "fanart",
+    pickup: true,
     description: "NEFFY(VALIS) Fanart 2025/11",
     detail_description: "VALISのメンバー、NEFFYのオリジナルソロ曲「Eyes On Me」のファンアートです。"
   },
@@ -23,6 +25,7 @@
     src: "images/Rara_JUICE.jpg",
     title: "JUICE",
     category: "fanart",
+    pickup: true,
     description: "RARA Fanart 2025/5",
     detail_description: "VALISのメンバー、RARAのオリジナルソロ曲「JUICE」のファンアートです。"
   },
@@ -32,6 +35,7 @@
     src: "images/Vitte_BlackSwan.jpg",
     title: "βlack Swan",
     category: "fanart",
+    pickup: true,
     description: "VITTE(VALIS) Fanart 2025/6",
     detail_description: "VALISのメンバー、VITTEのオリジナルソロ曲「βlack Swan」のファンアートです。黒鳥として生まれてしまった王女が、孤独と葛藤の末に憧れを捨て、彼女だけの黒い輝きを放つ決意を描きました。"
   },
@@ -41,6 +45,7 @@
     src: "images/Chino_prince.png",
     title: "Starry Sky Noble",
     category: "fanart",
+    pickup: true,
     description: "CHINO(VALIS) Fanart 2025/7",
     detail_description: ""
   },
@@ -50,6 +55,7 @@
     src: "images/VALIS_flowers.jpg",
     title: "Flowers",
     category: "fanart",
+    pickup: true,
     description: "VALIS Fanart 2025/12",
     detail_description: "VALISのメンバー全員を描いたファンアートです。VALIS 7th ONE-MAN LIVE「彷徨フォーエバー」のフラワースタンド企画にて使用されたイラストです。"
   },
@@ -60,6 +66,7 @@
     src: "images/Myu_Carmen.jpg",
     title: "Fatal Scarlet",
     category: "fanart",
+    pickup: true,
     description: "MYU(VALIS) Fanart 2025/7",
     detail_description: ""
   },
@@ -69,6 +76,7 @@
     src: "images/Rara_moment.jpg",
     title: "This moment!",
     category: "fanart",
+    pickup: false,
     description: "RARA(VALIS) Fanart 2025/8",
     detail_description: ""
   },
@@ -78,15 +86,17 @@
     src: "images/MK3.jpg",
     title: "Ash Resurrection",
     category: "original",
+    pickup: true,
     description: "Original character 2026/1",
     detail_description: "オリジナルキャラクター、サイドチェスターMK3のイラストです"
-  },  
+  },
   {
     id: "houkouforever",
     thumbnail: "images/thumbnail/houkouforever_thumbnail.jpg",
     src: "images/houkouforever.jpg",
     title: "Continue to Wander",
     category: "fanart",
+    pickup: false,
     description: "VALIS Fanart 2026/1",
     detail_description: "VALIS 7th ONE-MAN LIVE「彷徨フォーエバー」のファンアートです。"
   },
@@ -96,16 +106,18 @@
     src: "images/VALIS_Summer.jpg",
     title: "Hot Girls Summer!!",
     category: "fanart",
+    pickup: true,
     description: "VALIS Fanart 2025/9",
     detail_description: "夏VALIS"
   },
   {
     id: "valis_kassai",
-    thumbnail: "images/thumbnail/kassai_thumbnail.jpg",
-    src: "images/kassai.jpg",
+    thumbnail: "images/thumbnail/valis_kassai_thumbnail.jpg",
+    src: "images/valis_kassai.jpg",
     title: "喝采カーテンコール",
-    category: "work",
+    category: "works",
     client: "一日店長ｽﾞ様",
+    pickup: true,
     description: "works 2025/5",
     detail_description: "VALIS 6th ONE-MAN LIVE「喝采カーテンコール」の応援広告企画にて使用されたイラストです。"
   }

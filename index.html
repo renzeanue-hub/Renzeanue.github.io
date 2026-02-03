@@ -55,7 +55,7 @@
       <h2>Gallery</h2>
       <br>
       <div class="gallery-tabs">
-        <button class="gallery-tab active" data-category="all">All</button>
+        <button class="gallery-tab active" data-category="pickup">All</button>
         <button class="gallery-tab" data-category="fanart">Fanart</button>
         <button class="gallery-tab" data-category="original">Original</button>
         <button class="gallery-tab" data-category="works">Works</button>
@@ -77,8 +77,8 @@
       <h2>Works</h2>
       <br>
       <p>これまでの主な実績一覧です。</p>
-      <ul>
-        <li>2025年5月 - VALIS 6th ONE-MAN LIVE「喝采カーテンコール」応援広告企画 ポスターイラスト制作 </li>
+      <br>
+      <p>2025年5月 - VALIS 6th ONE-MAN LIVE「喝采カーテンコール」応援広告企画 ポスターイラスト制作</p>
     </section>
     <section id="contact">
       <h2>Contact</h2>
@@ -165,25 +165,33 @@
     });
 
     // ===== ギャラリーカテゴリ切り替え =====
-    const galleryTabs = document.querySelectorAll('.gallery-tab');
 
-    galleryTabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        document.querySelector('.gallery-tab.active').classList.remove('active');
-        tab.classList.add('active');
+  const galleryTabs  = document.querySelectorAll('.gallery-tab');
+  const galleryItems = document.querySelectorAll('.gallery-item');
 
-        const cat = tab.getAttribute('data-category');
-        const galleryItems = document.querySelectorAll('.gallery-item'); // ←ここで取得
+  function applyFilter(cat) {
+    galleryItems.forEach(item => {
+      const match =
+        cat === 'pickup'
+          ? item.dataset.pickup === 'true'
+          : item.dataset.category === cat;
 
-        galleryItems.forEach(item => {
-          if (cat === 'all' || item.dataset.category === cat) {
-            item.hidden = false;
-          } else {
-            item.hidden = true;
-          }
-        });
-      });
+      item.hidden = !match;
     });
+  }
+
+  galleryTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelector('.gallery-tab.active')?.classList.remove('active');
+      tab.classList.add('active');
+
+      applyFilter(tab.dataset.category);
+    });
+  });
+
+  // 初期表示は Pickup
+  applyFilter('pickup');
+
 
 
   //====Garallery more button====
