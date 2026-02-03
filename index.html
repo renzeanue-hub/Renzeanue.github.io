@@ -55,7 +55,7 @@
       <h2>Gallery</h2>
       <br>
       <div class="gallery-tabs">
-        <button class="gallery-tab active" data-category="pickup">All</button>
+        <button class="gallery-tab active" data-category="pickup">Pickup</button>
         <button class="gallery-tab" data-category="fanart">Fanart</button>
         <button class="gallery-tab" data-category="original">Original</button>
         <button class="gallery-tab" data-category="works">Works</button>
@@ -140,21 +140,23 @@
       show(now + 1);
       resetTimer();
     });
-    function autoSlide() {
-      show(now + 1);
-    }
+    function autoSlide() { show(now + 1); }
     function resetTimer() {
       clearInterval(timer);
       timer = setInterval(autoSlide, 3500);
     }
     timer = setInterval(autoSlide, 3500);
+
     const container = document.querySelector('.gallery-container');
 
-    // ギャラリー生成
+    // ギャラリー生成（★ data-pickup を追加）
     galleryData.forEach(item => {
       container.insertAdjacentHTML('beforeend', `
-        <div class="gallery-item" data-category="${item.category}" data-image-id="${item.id}">
-          <img src="${item.thumbnail}" alt="${item.title}">
+        <div class="gallery-item"
+            data-category="${item.category}"
+            data-image-id="${item.id}"
+            data-pickup="${item.pickup ? 'true' : 'false'}">
+          ${item.thumbnail}
           <div class="gallery-title">${item.title}<br>
             <span class="gallery-description">${item.description}
               <button class="gallery-more">more</button>
@@ -165,43 +167,40 @@
     });
 
     // ===== ギャラリーカテゴリ切り替え =====
+    const galleryTabs  = document.querySelectorAll('.gallery-tab');
+    // 将来の拡張を見据えて applyFilter 内で都度取得してもOK
+    function applyFilter(cat) {
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      galleryItems.forEach(item => {
+        const match =
+          (cat === 'pickup')
+            ? item.dataset.pickup === 'true'
+            : item.dataset.category === cat;
 
-  const galleryTabs  = document.querySelectorAll('.gallery-tab');
-  const galleryItems = document.querySelectorAll('.gallery-item');
+        item.hidden = !match;
+      });
+    }
 
-  function applyFilter(cat) {
-    galleryItems.forEach(item => {
-      const match =
-        cat === 'pickup'
-          ? item.dataset.pickup === 'true'
-          : item.dataset.category === cat;
-
-      item.hidden = !match;
+    galleryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelector('.gallery-tab.active')?.classList.remove('active');
+        tab.classList.add('active');
+        applyFilter(tab.dataset.category);
+      });
     });
-  }
 
-  galleryTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelector('.gallery-tab.active')?.classList.remove('active');
-      tab.classList.add('active');
+    // 初期表示は Pickup（★ これで表示されるようになる）
+    applyFilter('pickup');
 
-      applyFilter(tab.dataset.category);
-    });
-  });
-
-  // 初期表示は Pickup
-  applyFilter('pickup');
-
-
-
-  //====Garallery more button====
+    //==== Gallery more button ====
     document.querySelectorAll('.gallery-more').forEach(btn => {
       btn.addEventListener('click', (e) => {
-        e.stopPropagation(); // 親要素のイベント伝播を止める
+        e.stopPropagation();
         const imageId = btn.closest('.gallery-item').dataset.imageId;
         window.location.href = `detail.html?id=${imageId}`;
       });
     });
   </script>
+
 </body>
 </html>
