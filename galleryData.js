@@ -98,5 +98,15 @@
     category: "fanart",
     description: "VALIS Fanart 2025/9",
     detail_description: "夏VALIS"
+  },
+  {
+    id: "valis_kassai",
+    thumbnail: "images/thumbnail/kassai_thumbnail.jpg",
+    src: "images/kassai.jpg",
+    title: "喝采カーテンコール",
+    category: "work",
+    client: "一日店長ｽﾞ様",
+    description: "works 2025/5",
+    detail_description: "VALIS 6th ONE-MAN LIVE「喝采カーテンコール」の応援広告企画にて使用されたイラストです。"
   }
 ];
