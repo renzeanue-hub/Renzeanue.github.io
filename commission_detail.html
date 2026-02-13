@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
   <!-- ↓↓↓ base を先に書く！ ↓↓↓ -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="commission_detail.css">
   <link rel="stylesheet" href="loding.css">
+
 </head>
 
 <body>
@@ -35,110 +36,256 @@
       企業様、個人様ともにご依頼を受け付けています。<br>
       X(旧Twitter)のDMまたはメールからお願いします。
     </p>
-    <p>
-      <strong>ただいま実績作りのため、先着10件は特別価格で承ります!基本料金40%引きです！</strong><br>
-      <strong>現在(9/10)</strong>
-    </p>
-    <p>
-      <strong>割引条件</strong><br>
-      ・個人様のご依頼であること<br>
-      ・実績としてSNSやポートフォリオにイラストとお名前の掲載が可能であること
-    </p><br>
+
+    <div class="alert-box">
+      <strong>実績作りキャンペーン実施中</strong>
+      先着10件は基本料金40%引きで承ります<br>
+      <small>現在 9/10件</small>
+    </div>
+
+    <div class="discount-conditions">
+      <strong>割引条件</strong>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>個人様のご依頼であること</li>
+        <li>実績としてSNSやポートフォリオにイラストとお名前の掲載が可能であること</li>
+      </ul>
+    </div>
 
     <h2>連絡先</h2>
-    <ul>
-      <li>X: <a href="https://twitter.com/Renzeanue_10" target="_blank">@Renzeanue_10</a></li>
+    <ul class="contact-list">
+      <li>X(Twitter): <a href="https://twitter.com/Renzeanue_10" target="_blank">@Renzeanue_10</a></li>
       <li>Gmail: <a href="mailto:renzeanue@gmail.com">renzeanue@gmail.com</a></li>
     </ul>
-    <p>
-      個人のリクエストはSkebでも承っております。<br>
-      個人利用の場合はこちらもご検討ください。
-    </p><br>
+    <div class="note">
+      個人のリクエストはSkebでも承っております。個人利用の場合はこちらもご検討ください。
+    </div>
 
     <h2>ご依頼の流れ</h2>
-    <ol>
-      <li>下記テンプレートに記入してXのDMかメールへお送りください。</li>
-      <li>お見積もり<br>ご記入いただいたテンプレートを元にお見積もりを作成します。</li>
-      <li>カラーラフ画の提出･修正<br>修正希望があれば2回まで無料で修正しますのでお気軽にお申し付けください。</li>
-      <li>ご入金<br>ラフ画確定後にお支払いの案内をします。ご入金確認後に清書作業に入ります。</li>
-      <li>完成、納品</li>
-    </ol><br>
+    <ol class="flow-list">
+      <li>
+        <strong>お問い合わせ</strong>
+        下記テンプレートに記入してXのDMかメールへお送りください。
+      </li>
+      <li>
+        <strong>お見積もり</strong>
+        ご記入いただいたテンプレートを元にお見積もりを作成します。
+      </li>
+      <li>
+        <strong>カラーラフ画の提出･修正</strong>
+        修正希望があれば2回まで無料で修正しますのでお気軽にお申し付けください。
+      </li>
+      <li>
+        <strong>ご入金</strong>
+        ラフ画確定後にお支払いの案内をします。ご入金確認後に清書作業に入ります。
+      </li>
+      <li>
+        <strong>完成、納品</strong>
+        完成したイラストを納品いたします。
+      </li>
+    </ol>
 
     <h2>ご依頼時のテンプレート</h2>
-    <ul>
-      <p>◾︎使用用途</p>
-      <p>◾︎依頼内容（キャラクターデザイン、表情、ポーズ、背景、構図、人数など）</p>
-      <p>◾︎商用利用の有無（記載が無い場合は無し）</p>
-      <p>◾︎納品仕様(データ形式、サイズなど。お任せ可能。使用用途からこちらでご提案いたします）</p>
-      <p>◾︎希望納期</p>
-      <p>◾︎予算</p>
-      <p>◾︎実績としてSNS、ポートフォリオにイラストとお名前の掲載の可否（掲載方法を指定可能です）</p>
-    </ul>
-    <br>
-    <p>
-      ※ご依頼者様のＸのID、またはその他活動先のIDもしくはリンクがある場合は記載してください。<br>
+    <p style="margin-bottom: 15px;">以下のテンプレートをコピーしてご利用ください</p>
+    
+    <div style="position: relative;">
+      <textarea id="template-text" readonly style="
+        width: 100%;
+        min-height: 280px;
+        padding: 20px;
+        background: #0a0a0a;
+        border: 1px solid #333;
+        border-radius: 4px;
+        color: #d0d0d0;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.95em;
+        line-height: 1.8;
+        resize: vertical;
+        cursor: text;
+      ">◾︎使用用途：
+
+◾︎依頼内容（キャラクターデザイン、表情、ポーズ、背景、構図、人数など）：
+
+◾︎商用利用の有無（記載が無い場合は無し）：
+
+◾︎納品仕様（データ形式、サイズなど。お任せ可能。使用用途からこちらでご提案いたします）：
+
+◾︎希望納期：
+
+◾︎予算：
+
+◾︎実績掲載の可否（SNS、ポートフォリオにイラストとお名前の掲載。掲載方法を指定可能です）：
+
+◾︎ご依頼者様のXのID、またはその他活動先のIDやリンク（任意）：
+</textarea>
+      <button onclick="copyTemplate()" style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.9em;
+        transition: opacity 0.3s;
+        font-family: 'Noto Sans JP', sans-serif;
+      " onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        コピー
+      </button>
+      <div id="copy-message" style="
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #ec407a;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 0.9em;
+      ">
+        ✓ コピーしました
+      </div>
+    </div>
+
+    <div class="note">
       ※一例であり、必ずご利用いただく必要はありません。また、相談して決めたい項目があれば空白でも構いません。
-    </p><br>
+    </div>
 
     <h2>料金の目安</h2>
-    <p>
-      <strong>今だけ先着10件限定で基本の料金40%OFFキャンペーンやってます！<br>(10/10)</strong>
-    </p>
-    <p>
-      <strong>割引条件</strong><br>
-      ・個人様のご依頼であること<br>
-      ・実績としてSNSやポートフォリオにイラストとお名前の掲載が可能であること<br>
-      ※オプションは対象外です
-    </p>
-    <ul>
-      <li><strong>【バストアップ・半身】1キャラあたり<s>￥15,000</s>→9,000</strong><br>
-        - 納期:10日～
+    
+    <div class="price-section">
+      <p style="text-align: center; margin-bottom: 25px;">
+        <strong style="font-size: 1.3em; font-weight: 900;">今だけ先着10件限定 基本料金40%OFF</strong><br>
+        <span style="font-size: 0.9em; color: #666;">現在 10/10件</span>
+      </p>
+
+      <div class="discount-conditions" style="margin-bottom: 25px;">
+        <strong>割引条件</strong>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>個人様のご依頼であること</li>
+          <li>実績としてSNSやポートフォリオにイラストとお名前の掲載が可能であること</li>
+        </ul>
+        <p style="margin-top: 12px; font-size: 0.9em; color: #666;">※オプションは対象外です</p>
+      </div>
+
+      <ul class="price-list">
+        <li>
+          <strong>【バストアップ・半身】</strong> 1キャラあたり<br>
+          <s>¥15,000</s> → <span class="price-highlight">¥9,000</span>
+        </li>
+        <li>
+          <strong>【全身・キャラデザ・立ち絵】</strong> 1キャラあたり<br>
+          <s>¥20,000</s> → <span class="price-highlight">¥12,000</span>
+        </li>
+        <li>
+          <strong>【1枚絵（背景込み）】</strong><br>
+          <s>¥30,000</s> → <span class="price-highlight">¥18,000</span><br>
+          <small style="color: #666;">キャラクター1人追加ごとに +<s>¥10,000</s>→¥6,000</small><br>
+          <small style="color: #666;">※実際は人数による追加料金は画面に占めるキャラの大きさなどで相談しつつ決めます</small>
+        </li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top: 40px;">【オプション】</h3>
+    <ul class="option-list">
+      <li>
+        <span>背景(簡易)</span>
+        <strong>+¥3,000</strong>
       </li>
-      <li><strong>【全身・キャラデザ・立ち絵】1キャラあたり<s>￥20,000</s>→￥12,000</strong><br>
-        - 納期:14日～
+      <li>
+        <span>背景(描き込み)</span>
+        <strong>+¥8,000〜</strong>
       </li>
-      <li><strong>【1枚絵（背景込み）】<s>￥30,000</s>→￥18,000</strong><br>
-        - キャラクター1人追加ごとに+<s>￥10,000</s>→￥6,000<br>
-        - 納期:20日 ～<br>
-        ※実際は人数による追加料金は画面に占めるキャラの大きさなどで相談しつつ決めます
+      <li>
+        <span>差分(表情/小物)</span>
+        <strong>1枚 +¥2,000</strong>
+      </li>
+      <li>
+        <span>差分(服装)</span>
+        <strong>1枚 +¥5,000〜</strong>
+      </li>
+      <li>
+        <span>修正(3回目以降)</span>
+        <strong>1回 +¥3,000</strong>
+      </li>
+      <li>
+        <span>個人商用利用</span>
+        <strong>要相談</strong>
       </li>
     </ul>
-    <strong>【オプション】</strong>
-    <ul>
-      <li>背景(簡易) : +￥3,000</li>
-      <li>背景(描き込み) : +￥8,000〜<br>※1枚絵はデフォルトで背景込み</li>
-      <li>差分(表情/小物) : 1枚+￥2,000</li>
-      <li>差分(服装) : 1枚￥5,000〜</li>
-      <li>修正(3回目以降 ※2回目まで無料!) : 一回につき+￥3,000</li>
-      <li>個人商用利用 : 要相談　(グッズ販売・配信サムネ等)</li>
-    </ul>
-    <p>
-      ▪企業案件<br>
-      内容により要相談
-    </p>
-    <p>
-      ◾︎お支払い方法<br>
+    <div class="note">
+      ※1枚絵はデフォルトで背景込み<br>
+      ※修正は2回目まで無料！<br>
+      ※商用利用はグッズ販売・配信サムネ等が対象です
+    </div>
+
+    <h3 style="margin-top: 30px;">企業案件</h3>
+    <div class="info-box">
+      内容により要相談。お気軽にお問い合わせください。
+    </div>
+
+    <h3 style="margin-top: 30px;">お支払い方法</h3>
+    <div class="info-box">
       銀行振込（その他要相談）
-    </p>
-    <p>
+    </div>
+
+    <div class="note" style="margin-top: 20px;">
       ※納期はご依頼者様から納期を設定していただく場合の目安としてご理解ください。
-    </p><br>
+    </div>
 
     <h2>イラストの利用について注意事項</h2>
-    <ul>
-      <li>当初の使用用途とは別の目的でのイラストの無断使用禁止<br>
-      必ず事前にご連絡ください。</li>
-      <li>自作発言、二次配布・転売・再販売、NFT化、AI学習への利用禁止</li>
-      <li>イラストの保存、ロック画面などの個人使用可</li>
-      <li>ファンアート、skeb、依頼絵のご本人様以外の使用禁止</li>
+    <ul class="notice-list">
+      <li>
+        当初の使用用途とは別の目的でのイラストの無断使用禁止<br>
+        <small>必ず事前にご連絡ください。</small>
+      </li>
+      <li>
+        自作発言、二次配布・転売・再販売、NFT化、AI学習への利用禁止
+      </li>
+      <li>
+        イラストの保存、ロック画面などの個人使用可
+      </li>
+      <li>
+        ファンアート、skeb、依頼絵のご本人様以外の使用禁止
+      </li>
     </ul>
-    <p>ご不明点があればDMにお問い合わせください。</p><br>
+    
+    <div class="note" style="margin-top: 30px; text-align: center;">
+      ご不明点があればDMにお問い合わせください。
+    </div>
   </section>
 </main>
   <footer>
     <p>&copy;Illustration Portfolio</p>
   </footer>
   <script src="loding.js"></script>
-  <script></script>
+  <script>
+    function copyTemplate() {
+      const textarea = document.getElementById('template-text');
+      const button = document.querySelector('button[onclick="copyTemplate()"]');
+      const message = document.getElementById('copy-message');
+      
+      // テキストをコピー
+      textarea.select();
+      textarea.setSelectionRange(0, 99999); // モバイル対応
+      document.execCommand('copy');
+      
+      // ボタンを非表示、メッセージを表示
+      button.style.display = 'none';
+      message.style.display = 'block';
+      
+      // 2秒後に元に戻す
+      setTimeout(() => {
+        button.style.display = 'block';
+        message.style.display = 'none';
+      }, 2000);
+      
+      // 選択を解除
+      window.getSelection().removeAllRanges();
+    }
+  </script>
 </body>
 </html>
