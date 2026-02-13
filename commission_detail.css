@@ -52,6 +52,7 @@
     .main-nav a:hover::after {
     width: 100%;
     }
+
     #order {
       max-width: 900px;
       margin: 0 auto;
@@ -59,6 +60,7 @@
       line-height: 1.9;
       color: #e0e0e0;
       background: #000;
+      margin-top: 60px;
     }
 
     #order h2 {
