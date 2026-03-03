@@ -1,0 +1,68 @@
+﻿    body, html {
+      height: 100%;
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+    #loading {
+      position: fixed;
+      z-index: 9999;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.6s;
+    }
+    #loading.loaded {
+      opacity: 0;
+      pointer-events: none;
+    }
+    /* 画像アニメーション */
+    .spinner-img {
+      width: 220px;
+      height: 110px;
+      object-fit: contain;
+      margin-bottom: 30px;
+    }
+
+    /* 1文字ずつアニメーション */
+    .loading-letters {
+      display: flex;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .loading-letters span {
+      display: inline-block;
+      transition: transform 0.3s;
+      animation: bounce 1s infinite;
+      /* 各文字にズラしを設定 */
+    }
+    .loading-letters span:nth-child(1) { animation-delay: 0.0s; }
+    .loading-letters span:nth-child(2) { animation-delay: 0.1s; }
+    .loading-letters span:nth-child(3) { animation-delay: 0.2s; }
+    .loading-letters span:nth-child(4) { animation-delay: 0.3s; }
+    .loading-letters span:nth-child(5) { animation-delay: 0.4s; }
+    .loading-letters span:nth-child(6) { animation-delay: 0.5s; }
+    .loading-letters span:nth-child(7) { animation-delay: 0.6s; }
+    .loading-letters span:nth-child(8) { animation-delay: 0.7s; }
+
+    @keyframes bounce {
+      0%   { transform: translateY(0);}
+      15%  { transform: translateY(-18px);}
+      30%  { transform: translateY(0);}
+      100% { transform: translateY(0);}
+    }
+    /* コンテンツ見せるようになったら */
+    #content {
+      display: none;
+    }
+    #content.show {
+      display: block;
+    }
