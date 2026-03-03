@@ -19,10 +19,17 @@
 
 /* 枠のサイズを決める（ここを好きなサイズに） */
 .spinner-box {
-  width: 220px;
-  height: 110px;
-  overflow: hidden; /* ← これ追加！ */
+  width: 440px;
+  height: 220px;
+  overflow: hidden;
+
+  position: fixed;     /* 画面に固定 */
+  top: 50%;            /* 画面の中央へ */
+  left: 50%;
+  transform: translate(-50%, -50%); /* 自身の大きさ分ずらして本当の中央へ */
+  z-index: 9999;       /* 必要なら前面へ */
 }
+
 
 /* 画像は枠いっぱいに広げ、contain で収める */
 .spinner-img {
