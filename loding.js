@@ -28,7 +28,6 @@
       const delay = Math.max(0, minLoadTime - loadTime);
       setTimeout(() => {
         document.getElementById('loading').classList.add('loaded');
-        document.getElementById('content').classList.add('show');
         clearInterval(imgTimer);
       }, delay);
     });

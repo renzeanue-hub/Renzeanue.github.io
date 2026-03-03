@@ -368,10 +368,11 @@ h2 {
   border-top: 1px solid #444;
 }
 
-#about p, #contact p {
+#about p, #contact p ,#works p{
   color: #c9c9c9;
   font-size: 1.08em;
 }
+
 
 #contact a {
   color: #bbb;
