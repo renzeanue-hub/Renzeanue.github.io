@@ -1,11 +1,4 @@
-﻿    body, html {
-      height: 100%;
-      margin: 0;
-      background: #000;
-      color: #fff;
-      font-family: sans-serif;
-      overflow: hidden;
-    }
+﻿
     #loading {
       position: fixed;
       z-index: 9999;
