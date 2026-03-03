@@ -23,12 +23,6 @@
       opacity: 0;
       pointer-events: none;
     }
-    .src {
-      width: 220px;
-      height: 110px;
-      object-fit: contain;
-      margin-bottom: 30px;
-    }
     /* 画像アニメーション */
     .spinner-img {
       width: 220px;
