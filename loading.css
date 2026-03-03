@@ -22,12 +22,6 @@
   width: 440px;
   height: 220px;
   overflow: hidden;
-
-  position: fixed;     /* 画面に固定 */
-  top: 50%;            /* 画面の中央へ */
-  left: 50%;
-  transform: translate(-50%, -50%); /* 自身の大きさ分ずらして本当の中央へ */
-  z-index: 9999;       /* 必要なら前面へ */
 }
 
 
@@ -41,12 +35,14 @@
 
 
     /* 1文字ずつアニメーション */
-    .loading-letters {
-      display: flex;
-      font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
+.loading-letters {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
     .loading-letters span {
       display: inline-block;
       transition: transform 0.3s;
