@@ -1,7 +1,7 @@
 ﻿  // 画像パタパタ・アニメーション
     const images = ["images/Loading_anime/load1.png", "images/Loading_anime/load2.png"];
     let currentIdx = 0;
-    const switchInterval = 180; // ms（速さ調整できるよ）
+    const switchInterval = 130; // ms（速さ調整できるよ）
     const spinner = document.getElementById("spinner-img");
 
     // 交互画像切替
