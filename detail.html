@@ -10,15 +10,17 @@
   <!-- ↓↓↓ base を先に書く！ ↓↓↓ -->
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="loding.css">
+  <link rel="stylesheet" href="loading.css">
 </head>
 
 <body>
 <!-- ロード画面 -->
-  <div id="loading">
-    <div class="spinner"></div>
-    <p>Loading...</p>
+<div id="loading">
+  <div class="spinner-box">
+    <img class="spinner-img" id="spinner-img" src="images/Loading_anime/load1.png" alt="spinner">
   </div>
+  <div class="loading-letters" id="loading-text"></div>
+</div>
 
     <!-- ナビゲーション -->
   <nav class="main-nav">
