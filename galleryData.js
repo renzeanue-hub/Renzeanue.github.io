@@ -1,4 +1,45 @@
 ﻿const galleryData = [
+      {
+    id: "yinhui",
+    thumbnail: "images/thumbnail/yinhui_thumbnail.jpg",
+    src: "images/yinhui.jpg",
+    title: "銀慧",
+    category: "original",
+    pickup: true,
+    description: "Original character 2026/3",
+    detail_description: ""
+  },
+    {
+    id: "yinglian",
+    thumbnail: "images/thumbnail/yinglian_thumbnail.jpg",
+    src: "images/yinglian.jpg",
+    title: "影蓮",
+    category: "original",
+    pickup: true,
+    description: "Original character 2026/3",
+    detail_description: ""
+  },
+
+  {
+    id: "海の月齢",
+    thumbnail: "images/thumbnail/benikurage_thumbnail.jpg",
+    src: "images/benikurage",
+    title: "海の月齢",
+    category: "original",
+    pickup: true,
+    description: "Original 2026/2",
+    detail_description: ""
+  },
+  {
+    id: "valis_flowers",
+    thumbnail: "images/thumbnail/VALIS_flowers_thumbnail.jpg",
+    src: "images/VALIS_flowers.jpg",
+    title: "Flowers",
+    category: "fanart",
+    pickup: true,
+    description: "VALIS Fanart 2025/12",
+    detail_description: "VALISのメンバー全員を描いたファンアートです。VALIS 7th ONE-MAN LIVE「彷徨フォーエバー」のフラワースタンド企画にて使用されたイラストです。"
+  },
   {
     id: "chino_memoria",
     thumbnail: "images/thumbnail/CHINO_Memoria_thumbnail.jpg",
@@ -45,21 +86,10 @@
     src: "images/Chino_prince.png",
     title: "Starry Sky Noble",
     category: "fanart",
-    pickup: true,
+    pickup: false,
     description: "CHINO(VALIS) Fanart 2025/7",
     detail_description: ""
   },
-  {
-    id: "valis_flowers",
-    thumbnail: "images/thumbnail/VALIS_flowers_thumbnail.jpg",
-    src: "images/VALIS_flowers.jpg",
-    title: "Flowers",
-    category: "fanart",
-    pickup: true,
-    description: "VALIS Fanart 2025/12",
-    detail_description: "VALISのメンバー全員を描いたファンアートです。VALIS 7th ONE-MAN LIVE「彷徨フォーエバー」のフラワースタンド企画にて使用されたイラストです。"
-  },
-
  {
     id: "myu_carmen",
     thumbnail: "images/thumbnail/Myu_Carmen_thumbnail.jpg",
@@ -90,36 +120,8 @@
     description: "Original character 2026/1",
     detail_description: "オリジナルキャラクター、サイドチェスターMK3のイラストです"
   },
-  {
-    id: "海の月齢",
-    thumbnail: "images/thumbnail/benikurage_thumbnail.jpg",
-    src: "images/benikurage",
-    title: "海の月齢",
-    category: "original",
-    pickup: true,
-    description: "Original 2026/2",
-    detail_description: ""
-  },
-    {
-    id: "yinhui",
-    thumbnail: "images/thumbnail/MK3_thumbnail.jpg",
-    src: "images/yinhui.jpg",
-    title: "銀慧",
-    category: "original",
-    pickup: true,
-    description: "Original character 2026/3",
-    detail_description: ""
-  },
-    {
-    id: "yinglian",
-    thumbnail: "images/thumbnail/yinglian_thumbnail.jpg",
-    src: "images/yinglian.jpg",
-    title: "影蓮",
-    category: "original",
-    pickup: true,
-    description: "Original character 2026/3",
-    detail_description: ""
-  },
+
+
   {
     id: "houkouforever",
     thumbnail: "images/thumbnail/houkouforever_thumbnail.jpg",
