@@ -91,6 +91,36 @@
     detail_description: "オリジナルキャラクター、サイドチェスターMK3のイラストです"
   },
   {
+    id: "海の月齢",
+    thumbnail: "images/thumbnail/benikurage_thumbnail.jpg",
+    src: "images/benikurage",
+    title: "海の月齢",
+    category: "original",
+    pickup: true,
+    description: "Original 2026/2",
+    detail_description: ""
+  },
+    {
+    id: "yinhui",
+    thumbnail: "images/thumbnail/MK3_thumbnail.jpg",
+    src: "images/yinhui.jpg",
+    title: "銀慧",
+    category: "original",
+    pickup: true,
+    description: "Original character 2026/3",
+    detail_description: ""
+  },
+    {
+    id: "yinglian",
+    thumbnail: "images/thumbnail/yinglian_thumbnail.jpg",
+    src: "images/yinglian.jpg",
+    title: "影蓮",
+    category: "original",
+    pickup: true,
+    description: "Original character 2026/3",
+    detail_description: ""
+  },
+  {
     id: "houkouforever",
     thumbnail: "images/thumbnail/houkouforever_thumbnail.jpg",
     src: "images/houkouforever.jpg",
