@@ -102,8 +102,8 @@
   },
   {
     id: "neffy_circus",
-    thumbnail: "images/thumbnail/Neffy_Circus_thumbnail.jpg",
-    src: "images/Neffy_Circus.jpg",
+    thumbnail: "images/thumbnail/Neffy_circus_thumbnail.jpg",
+    src: "images/Neffy_circus.jpg",
     title: "NYANHAO CIRCUS",
     category: "fanart",
     pickup: true,
