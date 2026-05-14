@@ -101,6 +101,16 @@
     detail_description: ""
   },
   {
+    id: "neffy_circus",
+    thumbnail: "images/thumbnail/Neffy_Circus_thumbnail.jpg",
+    src: "images/Neffy_Circus.jpg",
+    title: "NYANHAO CIRCUS",
+    category: "fanart",
+    pickup: true,
+    description: "NEFFY(VALIS) Fanart 2026/5",
+    detail_description: ""
+  },
+  {
     id: "rara_moment",
     thumbnail: "images/thumbnail/Rara_moment_thumbnail.jpg",
     src: "images/Rara_moment.jpg",
@@ -116,7 +126,7 @@
     src: "images/MK3.jpg",
     title: "Ash Resurrection",
     category: "original",
-    pickup: true,
+    pickup: false,
     description: "Original character 2026/1",
     detail_description: "オリジナルキャラクター、サイドチェスターMK3のイラストです"
   },
