@@ -19,6 +19,26 @@
     description: "Original character 2026/3",
     detail_description: ""
   },
+  {
+    id: "Mercury",
+    thumbnail: "images/thumbnail/mizunoami_thumbnail.jpg",
+    src: "images/mizunoami.jpg",
+    title: "セーラーマーキュリー/水野亜美",
+    category: "fanart",
+    pickup: true,
+    description: "fanart 2026/5",
+    detail_description: ""
+  },  
+  {
+    id: "Commition1",
+    thumbnail: "images/thumbnail/Commition1_thumbnail.jpg",
+    src: "images/Commition1.jpg",
+    title: "Commition1",
+    category: "works",
+    pickup: true,
+    description: "work 2026/4",
+    detail_description: ""
+  },
 
   {
     id: "海の月齢",
