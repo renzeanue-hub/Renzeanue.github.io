@@ -30,10 +30,10 @@
     detail_description: ""
   },  
   {
-    id: "Commition1",
-    thumbnail: "images/thumbnail/Commition1_thumbnail.jpg",
-    src: "images/Commition1.jpg",
-    title: "Commition1",
+    id: "Commission1",
+    thumbnail: "images/thumbnail/Commission1_thumbnail.jpg",
+    src: "images/Commission1.jpg",
+    title: "Commission1",
     category: "works",
     pickup: true,
     description: "work 2026/4",
