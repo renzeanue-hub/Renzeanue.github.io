@@ -19,16 +19,7 @@
     description: "Original character 2026/3",
     detail_description: ""
   },
-  {
-    id: "Mercury",
-    thumbnail: "images/thumbnail/mizunoami_thumbnail.jpg",
-    src: "images/mizunoami.jpg",
-    title: "セーラーマーキュリー/水野亜美",
-    category: "fanart",
-    pickup: true,
-    description: "fanart 2026/5",
-    detail_description: ""
-  },  
+
   {
     id: "Commission1",
     thumbnail: "images/thumbnail/Commission1_thumbnail.jpg",
@@ -37,6 +28,16 @@
     category: "works",
     pickup: true,
     description: "work 2026/4",
+    detail_description: ""
+  },
+    {
+    id: "neffy_circus",
+    thumbnail: "images/thumbnail/Neffy_circus_thumbnail.jpg",
+    src: "images/Neffy_circus.jpg",
+    title: "NYANHAO CIRCUS",
+    category: "fanart",
+    pickup: true,
+    description: "NEFFY(VALIS) Fanart 2026/5",
     detail_description: ""
   },
 
@@ -120,16 +121,17 @@
     description: "MYU(VALIS) Fanart 2025/7",
     detail_description: ""
   },
-  {
-    id: "neffy_circus",
-    thumbnail: "images/thumbnail/Neffy_circus_thumbnail.jpg",
-    src: "images/Neffy_circus.jpg",
-    title: "NYANHAO CIRCUS",
+    {
+    id: "Mercury",
+    thumbnail: "images/thumbnail/mizunoami_thumbnail.jpg",
+    src: "images/mizunoami.jpg",
+    title: "セーラーマーキュリー/水野亜美",
     category: "fanart",
     pickup: true,
-    description: "NEFFY(VALIS) Fanart 2026/5",
+    description: "fanart 2026/5",
     detail_description: ""
-  },
+  },  
+
   {
     id: "rara_moment",
     thumbnail: "images/thumbnail/Rara_moment_thumbnail.jpg",
